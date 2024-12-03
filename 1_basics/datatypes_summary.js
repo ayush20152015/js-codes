@@ -54,4 +54,43 @@ console.table(myobj);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
+// memory type in js 
+
+//  stack (primitve)
+// heap (non primitive)
+
+let a1=4;
+let b1=a1;
+
+console.log(b1);
+console.log(a1);    // data is stored in stacks
+
+let myobject={
+
+      name:"Ayush",
+      roll:33,
+
+}
+
+console.table(myobject);
+
+
+let nm1= myobject.name;
+ nm1="ayush1";
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
