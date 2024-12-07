@@ -42,5 +42,41 @@
 
     // Add a language using the optimized function
     optiaddlang("rb"); // Corrected function call to match the defined function name
+
+
+    // edit
+
+    const second_language=document.querySelector("li:nthchild(2)");
+    
+     const newli=document.createElement('li');
+
+     newli.textContent="Mojo";
+
+    second_language.replaceWith(newli);
+
+
+    // edit
+   
+    const first_language=document.querySelector("li:first-child");
+
+    first_language='<li>typescript</li>';
+
+
+    // remove
+
+    const lastlang=document.querySelector('li:last-child');
+
+    lastlang.remove();
+
+    
+
+
+
+
+     
+
+
+
+
 </script>
 </html>
