@@ -13,6 +13,7 @@
 
 </body>
 <script>
+    // Function to add a language using innerHTML
     function addlang(lang) {
         // Create a new 'li' element
         let li = document.createElement('li');
@@ -27,5 +28,19 @@
     // Add new languages
     addlang("python");
     addlang("cpp");
+
+    // Optimized function to add a language using text nodes
+    function optiaddlang(lang) { // Corrected function name to match usage
+        const li = document.createElement('li'); // Create an 'li' element
+
+        const no = document.createTextNode(`${lang}`); // Create a text node with the language
+
+        li.appendChild(no); // Append the text node to the 'li'
+
+        document.querySelector('.lang').appendChild(li); // Append the 'li' to the 'ul'
+    }
+
+    // Add a language using the optimized function
+    optiaddlang("rb"); // Corrected function call to match the defined function name
 </script>
 </html>
