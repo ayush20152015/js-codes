@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    
+    <ul class="lang"> 
+        <li>java</li>
+    </ul>
+
+</body>
+<script>
+    function addlang(lang) {
+        // Create a new 'li' element
+        let li = document.createElement('li');
+        
+        // Set its content
+        li.innerHTML = `${lang}`;
+        
+        // Append it to the 'ul' with class 'lang'
+        document.querySelector('.lang').appendChild(li);
+    }
+
+    // Add new languages
+    addlang("python");
+    addlang("cpp");
+</script>
+</html>

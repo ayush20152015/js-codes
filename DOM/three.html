@@ -5,44 +5,29 @@
     <title>Welcome</title>
 </head>
 <body style="background-color: grey; color: white">
-
-
-    
-
-
 </body>
 
 <script>
-   
-  const div=document.createElement('div');
+    const div = document.createElement('div'); // Create a new div element
 
-  console.log(div);
-  div.className="main";
+    console.log(div);
+    div.className = "main"; // Set the class name of the div
 
-  div.id=MAth.round(Math.random()*10+1);
+    div.id = Math.round(Math.random() * 10 + 1); // Generate a random id
 
-  div.setAttribute("title","genrate title");
+    div.setAttribute("title", "generate title"); // Add a title attribute
 
-  div.style.backgroundColor="green";
+    div.style.backgroundColor = "green"; // Style the div
+    div.style.padding = "12px";
 
-  div.style.padding="12px";
+    div.innerText = "ayush"; // Set the inner text of the div
 
-  div.innerText="ayush";
-   // not attached yet
+    // Adding additional text
+    const addText = document.createTextNode(" ayush choudhary");
 
-   const addText=document.createTextNode("ayush choudhary");
+    div.append(addText); // Append the text node to the div
 
-
-    div.append(addText);
-  
-    //attachement process
-
-     docuement.body.appendChild(div);
-
-     
-     
-
-
-
+    // Attach the div to the document body
+    document.body.appendChild(div); // Fixed typo here
 </script>
 </html>
